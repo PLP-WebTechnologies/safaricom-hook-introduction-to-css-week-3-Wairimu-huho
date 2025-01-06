@@ -1,0 +1,43 @@
+/* External CSS File (styles.css) */
+
+/* Page Background */
+body {
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    color: blue;
+    text-align: center;
+    font-size: 33px;
+}
+
+/* Link Section Styling */
+.link-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Link Styling with Hover Effects */
+.custom-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 16px;
+    color: #3498db;
+    text-decoration: none;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.custom-link:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}

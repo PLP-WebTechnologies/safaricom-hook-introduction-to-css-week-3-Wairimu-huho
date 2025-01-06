@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Implementation Methods</title>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Internal CSS for three elements */
+        h1 {
+            font-family: 'Arial', sans-serif;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .content-box {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .feature-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #34495e;
+        }
+        ul li{
+            color: rgb(177, 6, 177);
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inline CSS Example -->
+    <div>
+        <h1 style="color: #2c3e50; font-weight: bold; text-align: center;">
+            Inline CSS styling!
+        </h1>
+        <p style="color: #3771ac; font-size: 25px; font-weight: bold;">Latin Language</p>
+        <p style="color: #2c3e50; font-size: 20px;">Latin is an ancient Indo-European language that originated in the Italian Peninsula and was spoken by the
+            Romans. It served as the foundation for the Romance languages, including Italian, French, Spanish,
+            Portuguese, and Romanian. Latin was the language of literature, law, science, and the Catholic Church for
+            centuries, influencing many modern languages and cultures. Though it is no longer spoken as a native
+            language, it is still studied for its historical significance and its role in classical education.</p>
+    </div>
+
+    <h1>CSS Implementation Methods Demo</h1>
+
+    <div class="content-box">
+        <p class="feature-text">
+            Latin is a very interesting language. Here are some of its importance:
+        </p>
+        <ul>
+            <li>Enhances Vocabulary</li>
+            <li>Improves Grammar Skills</li>
+            <li>Foundation for Romance Languages</li>
+            <li>Strengthens Critical Thinking</li>
+        </ul>
+    </div>
+
+    <h3>External CSS</h3>
+    <div class="link-section">
+        <p>These links are styled using external CSS (hover to see effects):</p>
+        <a href="#" class="custom-link">First Link</a>
+        <a href="#" class="custom-link">Second Link</a>
+        <a href="#" class="custom-link">Third Link</a>
+    </div>
+</body>
+
+</html>
