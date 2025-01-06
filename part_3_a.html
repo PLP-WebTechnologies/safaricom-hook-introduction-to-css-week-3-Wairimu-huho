@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Greece - A Mediterranean Paradise</title>
+    <style>
+        :root {
+            --primary-blue: #1a5f7a;
+            --accent-blue: #2b89b8;
+            --gold: #d4af37;
+            --light-cream: #fff9f0;
+            --text-dark: #2c3e50;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-cream);
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .hero-section p {
+            font-size: 1.4em;
+            max-width: 800px;
+            margin: 20px auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--gold);
+            padding-bottom: 10px;
+            text-align: left;
+        }
+
+        .intro-text {
+            font-family: 'Georgia', serif;
+            font-size: 1.3em;
+            color: #34495e;
+            text-align: justify;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-left: 5px solid var(--accent-blue);
+            background-color: rgba(43, 137, 184, 0.1);
+            line-height: 1.8;
+        }
+
+        .highlight-card {
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1));
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e1e1e1;
+            transition: all 0.3s ease;
+        }
+
+        .feature-box:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent-blue);
+        }
+
+        .feature-box h3 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            font-size: 1.6em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: var(--gold);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #c1981e;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5em;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <h1>Welcome to Greece</h1>
+        <p>Discover the birthplace of democracy, philosophy, and the Olympic Games</p>
+    </div>
+
+    <div class="container">
+        <p class="intro-text">
+            Greece, a country where ancient history meets modern charm, invites you to 
+            explore its timeless wonders. From the magnificent Acropolis in Athens to 
+            the crystal-clear waters of the Aegean Sea, every corner tells a story 
+            spanning millennia of human civilization.
+        </p>
+
+        <div class="section">
+            <h2>Historical Legacy</h2>
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <h3>Ancient Ruins</h3>
+                    <p>Step back in time as you explore well-preserved ancient temples, 
+                    theaters, and monuments that have stood the test of time for over 
+                    2,500 years.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Rich Mythology</h3>
+                    <p>Immerse yourself in the fascinating tales of Greek mythology, 
+                    where gods and heroes shaped the world through epic adventures and 
+                    legendary battles.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Cultural Heritage</h3>
+                    <p>Experience living traditions, from authentic Greek cuisine to 
+                    traditional music and dance, that continue to thrive in modern times.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-card">
+            <h2 style="color: white; border-bottom: 3px solid white;">Natural Beauty</h2>
+            <p>Greece boasts over 6,000 islands and islets, each offering unique 
+            landscapes and experiences. From the white-washed buildings of Santorini 
+            to the lush forests of Zakynthos, nature's beauty is on full display.</p>
+            <a href="#" class="cta-button">Explore Islands</a>
+        </div>
+
+        <div class="section">
+            <h2>Modern Greece</h2>
+            <p>Today's Greece seamlessly blends its ancient heritage with contemporary 
+            lifestyle. Vibrant cities, modern infrastructure, and world-class 
+            hospitality make it a perfect destination for travelers seeking both 
+            historical exploration and modern comfort.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-box">
+                    <h3>Local Cuisine</h3>
+                    <p>Savor traditional Greek dishes like moussaka, souvlaki, and 
+                    fresh Mediterranean seafood, accompanied by local wines and the 
+                    famous Greek hospitality.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Outdoor Activities</h3>
+                    <p>From hiking ancient trails to sailing the Mediterranean waters, 
+                    Greece offers endless opportunities for adventure and exploration.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Discover Greece | Created with passion for the land of gods</p>
+    </footer>
+</body>
+</html>
