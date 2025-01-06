@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Element Selector - Changes font size of all headings */
+        h1 {
+            font-size: 2.5em;
+            color: purple;
+        }
+
+        /* Class Selector - Applies background color to sections */
+        .section-1 {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .section-2{
+            background-color: aqua;
+            padding: 20px;
+            margin:10px 0 ;
+            font-size: 20px;
+        }
+
+        /* ID Selector - Adds border to unique element */
+        #special-note {
+            border: 2px solid #4CAF50;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CSS Selectors Demo</h1>
+    
+    <div class="section-1">
+        <p>This is a paragraph inside a div with a class selector. 
+           The background color is applied using the .content-section class.</p>
+    </div>
+
+    <div class="section-2">
+        <p>This is another section with the same class, 
+           showing how class selectors can be reused.</p>
+    </div>
+
+    <p id="special-note">This paragraph has a unique ID and is styled with a border 
+       using the #special-note ID selector.</p>
+</body>
+</html>
